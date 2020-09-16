@@ -59,6 +59,27 @@ Vue.use(VueRouter)
       name: 'CheckBox2',
       component: ()=>import("../views/form/CheckBox-2")
     },
+    {
+      path: '/Rate',
+      name: 'Rate',
+      component: ()=>import("../views/unit/Rate")
+    },
+    {
+
+      path: '/ColorPicker',
+      name: 'ColorPicker',
+      component: ()=>import("../views/unit/ColorPicker")
+    },
+    {
+      path: '/Message',
+      name: 'Message',
+      component: ()=>import("../views/notice/Message")
+    },
+    {
+      path: '/Notification',
+      name: 'Notification',
+      component: ()=>import("../views/notice/Notification")
+    },
 ]
 
 const router = new VueRouter({
