@@ -39,6 +39,26 @@ Vue.use(VueRouter)
       name: 'Line',
       component: ()=>import("../views/line/Line")
     },
+    {
+      path: '/Radio1',
+      name: 'Radio1',
+      component: ()=>import("../views/form/Radio-1")
+    },
+    {
+      path: '/Radio2',
+      name: 'Radio2',
+      component: ()=>import("../views/form/Radio-2")
+    },
+    {
+      path: '/CheckBox1',
+      name: 'CheckBox1',
+      component: ()=>import("../views/form/CheckBox-1")
+    },
+    {
+      path: '/CheckBox2',
+      name: 'CheckBox2',
+      component: ()=>import("../views/form/CheckBox-2")
+    },
 ]
 
 const router = new VueRouter({
