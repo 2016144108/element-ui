@@ -60,6 +60,11 @@ Vue.use(VueRouter)
       component: ()=>import("../views/form/CheckBox-2")
     },
     {
+      path: '/Input1',
+      name: 'Input1',
+      component: ()=>import("../views/form/Input-1")
+    },
+    {
       path: '/Rate',
       name: 'Rate',
       component: ()=>import("../views/unit/Rate")
@@ -79,6 +84,11 @@ Vue.use(VueRouter)
       path: '/Notification',
       name: 'Notification',
       component: ()=>import("../views/notice/Notification")
+    },
+    {
+      path: '/Carousel',
+      name: 'Carousel',
+      component: ()=>import("../views/carousel/Carousel")
     },
 ]
 
