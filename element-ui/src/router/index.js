@@ -90,6 +90,21 @@ Vue.use(VueRouter)
       name: 'Carousel',
       component: ()=>import("../views/carousel/Carousel")
     },
+    {
+      path: '/Table1',
+      name: 'Table1',
+      component: ()=>import("../views/table/Table-1")
+    },
+    {
+      path: '/Table2',
+      name: 'Table2',
+      component: ()=>import("../views/table/Table-2")
+    },
+    {
+      path: '/Table3',
+      name: 'Table3',
+      component: ()=>import("../views/table/Table-3")
+    },
 ]
 
 const router = new VueRouter({
