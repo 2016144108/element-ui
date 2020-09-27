@@ -105,6 +105,21 @@ Vue.use(VueRouter)
       name: 'Table3',
       component: ()=>import("../views/table/Table-3")
     },
+    {
+      path: '/Table4',
+      name: 'Table4',
+      component: ()=>import("../views/table/Table-4")
+    },
+    {
+      path: '/Progress',
+      name: 'Progress',
+      component: ()=>import("../views/progress/Progress")
+    },
+    {
+      path: '/Dialog',
+      name: 'Dialog',
+      component: ()=>import("../views/dialog/Dialog")
+    },
 ]
 
 const router = new VueRouter({

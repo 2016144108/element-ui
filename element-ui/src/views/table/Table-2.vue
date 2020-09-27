@@ -11,17 +11,16 @@
             <el-table-column
                     prop="date"
                     label="日期"
-                    width="180">
+                    >
             </el-table-column>
             <el-table-column
                     prop="name"
                     label="姓名"
-                    width="180">
+                    >
             </el-table-column>
             <el-table-column
-                    width="180"
                     prop="address"
-                    label="地址">
+                    >
             </el-table-column>
             <el-table-column
                     label="操作"

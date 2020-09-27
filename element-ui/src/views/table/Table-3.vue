@@ -26,7 +26,7 @@
                 <template slot-scope="scope">
                     <el-button @click="handleWatch(scope.row)" type="text" size="small">查看</el-button>
                     <el-button @click="handleEdit(scope.row)" type="text" size="small">编辑</el-button>
-                    <el-button @click="handleDelete(scope.row)" type="text" size="small">编辑</el-button>
+                    <el-button @click="handleDelete(scope.row)" type="text" size="small">删除</el-button>
                 </template>
             </el-table-column>
         </el-table>
@@ -83,6 +83,9 @@
         },
         methods:{
             handleWatch(row){
+                this.$message({
+                    message:   `你查看了id为${row.id}的数据`
+                })
                 console.log(row,row.id,row.date,row.name,row.address);
             },
             handleEdit(row){

@@ -5,7 +5,7 @@
         <router-link :to="{name:'Layout1'}">layout</router-link>
       </li>
     </ul>
-    <router-view/>
+    <router-view :key="key"/>
   </div>
 </template>
 
@@ -20,3 +20,14 @@
     margin-bottom: 20px;
   }
 </style>
+<script>
+  export default {
+    name: "App",
+    mounted() {},
+    computed: {
+      key() {
+        return this.$route.name !== undefined? this.$route.name +new Date(): this.$route +new Date()
+      }
+    }
+  };
+</script>
