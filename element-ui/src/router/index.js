@@ -120,6 +120,26 @@ Vue.use(VueRouter)
       name: 'Dialog',
       component: ()=>import("../views/dialog/Dialog")
     },
+    {
+      path: '/Collapse',
+      name: 'Collapse',
+      component: ()=>import("../views/collapse/Collapse")
+    },
+    {
+      path: '/Alert',
+      name: 'Alert',
+      component: ()=>import("../views/alert/Alert")
+    },
+    {
+      path: '/Loading1',
+      name: 'Loading1',
+      component: ()=>import("../views/loading/Loading-1")
+    },
+    {
+      path: '/Loading2',
+      name: 'Loading2',
+      component: ()=>import("../views/loading/Loading-2")
+    },
 ]
 
 const router = new VueRouter({
