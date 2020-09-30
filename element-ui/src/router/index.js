@@ -155,6 +155,11 @@ Vue.use(VueRouter)
       name: 'Avatar',
       component: ()=>import("../views/avatar/Avatar")
     },
+    {
+      path: '/Images',
+      name: 'Images',
+      component: ()=>import("../views/image/Image")
+    },
 ]
 
 const router = new VueRouter({
