@@ -140,6 +140,21 @@ Vue.use(VueRouter)
       name: 'Loading2',
       component: ()=>import("../views/loading/Loading-2")
     },
+    {
+      path: '/MessageBox',
+      name: 'MessageBox',
+      component: ()=>import("../views/notice/MessageBox")
+    },
+    {
+      path: '/Tree',
+      name: 'Tree',
+      component: ()=>import("../views/tree/Tree")
+    },
+    {
+      path: '/Avatar',
+      name: 'Avatar',
+      component: ()=>import("../views/avatar/Avatar")
+    },
 ]
 
 const router = new VueRouter({
